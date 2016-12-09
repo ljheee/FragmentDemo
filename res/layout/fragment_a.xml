@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+     <TextView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:gravity="center_horizontal"
+		android:text="@string/title" />
+    
+    <TextView 
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/title"
+		android:gravity="right"
+		android:text="@string/username"/>
+    
+    <EditText 
+        android:id="@+id/user"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/username"
+        android:layout_margin="10dp"
+        android:hint="@string/hint_user"
+        />
+    
+     <TextView 
+        android:id="@+id/userpas"
+        android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/username"
+		android:layout_marginTop="10dp"
+		android:layout_alignRight="@id/username"
+		android:text="@string/userpas"/>
+    
+    <EditText 
+        android:id="@+id/password"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/userpas"
+        android:layout_below="@id/username"
+        android:layout_alignLeft="@id/user"
+        android:inputType="textVisiblePassword"
+        android:hint="@string/hint_pass"
+        />
+
+    <LinearLayout 
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+   	    android:layout_height="wrap_content"
+   	    android:layout_below="@id/password"
+   	    android:paddingTop="@dimen/activity_vertical_margin"
+   	    android:gravity="right"
+        >
+        
+        <Button
+            android:id="@+id/ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_ok"
+            />
+
+        <Button 
+            android:id="@+id/cancle"
+            android:layout_width="wrap_content"
+   	   	    android:layout_height="wrap_content" 
+   	   	    android:text="@string/btn_cancle"/>
+    </LinearLayout>
+
+</RelativeLayout>

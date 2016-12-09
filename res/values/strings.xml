@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FragmentDemo</string>
+    
+    <string name="action_exit">退出</string>
+    <string name="action_settings">设置</string>
+    
+    
+    <string name="title">MyApp</string>
+    <string name="username">用户名：</string>
+    <string name="userpas">密码：</string>
+    <string name="hint_user">phone</string>
+    <string name="hint_pass">pass</string>
+    <string name="btn_ok">下一步</string>
+    <string name="btn_cancle">返回</string>
+    
+    
+    <string name="hobbys">爱好选择</string>
+    <string name="checkbox1">Java</string>
+    <string name="checkbox2">C++</string>
+    <string name="sex">性别</string>
+    <string name="male">男</string>
+    <string name="female">女</string>
+    <string name="addr">地址</string>
+    
+</resources>
